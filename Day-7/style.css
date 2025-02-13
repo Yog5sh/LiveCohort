@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+h1 {
+  text-align: center;
+}
+.heading p {
+  font-size: 0.8rem;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f4f4f4;
+}
+
+img {
+  width: 250px;
+  height: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #808085;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card .description {
+  width: 13rem;
+  text-align: center;
+}
+.card p:nth-child(2) {
+  margin-top: 15px;
+  font-weight: 700;
+}
+.card p:nth-child(3),
+p:nth-child(4) {
+  margin-top: 2px;
+}
+
+.card .price {
+  font-weight: 800;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+@media (min-width: 768px) and (max-width:1023px){
+  .grid {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+.footer p{
+  text-align: center;
+  padding: 20px;
+}

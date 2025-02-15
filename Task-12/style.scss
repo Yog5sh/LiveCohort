@@ -118,19 +118,136 @@ nav {
     }
   }
 }
-.view-2{
+.view-2 {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+  h1 {
+    font-size: 2rem;
+  }
+  .titles {
     display: flex;
-    flex-direction: column;
+
+    p {
+      font-size: 1.4rem;
+      font-weight: 500;
+      order: 1;
+    }
+    ul {
+      display: none;
+    }
+  }
+  .button {
+    order: 3;
+    text-align: center;
+    padding: 0.4rem 3rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .image-gallery {
+    display: flex;
+    order: 2;
     gap: 1rem;
-    h1{
-        font-size: 2rem;
+
+    .card:nth-child(3),
+    .card:nth-child(4) {
+      display: none;
     }
-    .titles{
-        p{
-            font-size: 1.4rem;
-            font-weight: 500;
+
+    .card {
+      img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 1rem;
+      }
+      h1 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.view-3 {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+
+  .latest {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 1.4rem;
+    }
+    .button {
+      padding: 0.4rem 3rem;
+      border-radius: 2rem;
+      font-size: 0.6rem;
+      border: 1px solid black;
+      width: fit-content;
+    }
+  }
+
+  .gallery {
+    .left {
+      .card {
+        width: 100%;
+        img {
+          width: 100%;
+          border-radius: 1rem;
         }
+
+        .details {
+          display: flex;
+          flex-direction: column;
+
+          gap: 0.4rem;
+          h1 {
+            font-size: 1rem;
+          }
+        }
+      }
     }
+
+    .right {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+
+      gap: 1rem;
+
+      .card {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+
+        img {
+          width: 50%;
+          height: inherit;
+          object-fit: cover;
+          border-radius: 1rem;
+        }
+
+        .details {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+
+          gap: 0.4rem;
+          h1 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -223,6 +340,114 @@ nav {
         "a a c c"
         ". . c c";
       gap: 2rem;
+    }
+  }
+
+  .view-2 {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    gap: 1rem;
+    h1 {
+      font-size: 3rem;
+    }
+    .titles {
+      display: flex;
+
+      p {
+        font-size: 1.4rem;
+        font-weight: 500;
+        order: 1;
+      }
+      ul {
+        display: block;
+        order: 2;
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        margin-left: 1rem;
+      }
+    }
+    .button {
+      order: 3;
+      text-align: center;
+      padding: 0.4rem 3rem;
+      border-radius: 2rem;
+      border: 1px solid black;
+      width: fit-content;
+      margin: 0 auto;
+
+      position: absolute;
+      right: 0;
+      top: 5rem;
+    }
+    .image-gallery {
+      display: flex;
+      order: 4;
+      gap: 1rem;
+
+      .card:nth-child(3),
+      .card:nth-child(4) {
+        display: block;
+      }
+      .card {
+        width: 30%;
+        img {
+          width: 100%;
+          aspect-ratio: 2/3;
+          object-fit: cover;
+          border-radius: 1rem;
+        }
+        h1 {
+          width: 100%;
+          font-size: 1rem;
+        }
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .view-3 {
+    .latest {
+      h1 {
+        font-size: 2rem;
+      }
+      .button {
+        font-size: 1rem;
+      }
+    }
+
+    .gallery {
+      display: flex;
+      gap: 2rem;
+
+      .left {
+        width: 60%;
+        .card {
+          img {
+            width: 100%;
+            height: inherit;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .right {
+        width: 40%;
+        margin-top: 0;
+        display: flex;
+
+        gap: 1rem;
+
+        .card {
+          display: flex;
+          gap: 1rem;
+        }
+      }
     }
   }
 }

@@ -103,6 +103,7 @@ nav .search .signin {
 }
 
 .view-2 {
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -110,9 +111,109 @@ nav .search .signin {
 .view-2 h1 {
   font-size: 2rem;
 }
+.view-2 .titles {
+  display: flex;
+}
 .view-2 .titles p {
   font-size: 1.4rem;
   font-weight: 500;
+  order: 1;
+}
+.view-2 .titles ul {
+  display: none;
+}
+.view-2 .button {
+  order: 3;
+  text-align: center;
+  padding: 0.4rem 3rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.view-2 .image-gallery {
+  display: flex;
+  order: 2;
+  gap: 1rem;
+}
+.view-2 .image-gallery .card:nth-child(3),
+.view-2 .image-gallery .card:nth-child(4) {
+  display: none;
+}
+.view-2 .image-gallery .card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.view-2 .image-gallery .card h1 {
+  font-size: 1rem;
+}
+
+.view-3 {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-3 .latest {
+  display: flex;
+  justify-content: space-between;
+}
+.view-3 .latest h1 {
+  font-size: 1.4rem;
+}
+.view-3 .latest .button {
+  padding: 0.4rem 3rem;
+  border-radius: 2rem;
+  font-size: 0.6rem;
+  border: 1px solid black;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.view-3 .gallery .left .card {
+  width: 100%;
+}
+.view-3 .gallery .left .card img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.view-3 .gallery .left .card .details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.view-3 .gallery .left .card .details h1 {
+  font-size: 1rem;
+}
+.view-3 .gallery .right {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-3 .gallery .right .card {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+.view-3 .gallery .right .card img {
+  width: 50%;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.view-3 .gallery .right .card .details {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.view-3 .gallery .right .card .details h1 {
+  font-size: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -186,5 +287,99 @@ nav .search .signin {
     width: 60%;
     grid-template-areas: ". . b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" ". . c c";
     gap: 2rem;
+  }
+  .view-2 {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+  }
+  .view-2 h1 {
+    font-size: 3rem;
+  }
+  .view-2 .titles {
+    display: flex;
+  }
+  .view-2 .titles p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    order: 1;
+  }
+  .view-2 .titles ul {
+    display: block;
+    order: 2;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  .view-2 .button {
+    order: 3;
+    text-align: center;
+    padding: 0.4rem 3rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 5rem;
+  }
+  .view-2 .image-gallery {
+    display: flex;
+    order: 4;
+    gap: 1rem;
+  }
+  .view-2 .image-gallery .card:nth-child(3),
+  .view-2 .image-gallery .card:nth-child(4) {
+    display: block;
+  }
+  .view-2 .image-gallery .card {
+    width: 30%;
+  }
+  .view-2 .image-gallery .card img {
+    width: 100%;
+    aspect-ratio: 2/3;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 1rem;
+  }
+  .view-2 .image-gallery .card h1 {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .view-2 .image-gallery .card p {
+    width: 100%;
+  }
+  .view-3 .latest h1 {
+    font-size: 2rem;
+  }
+  .view-3 .latest .button {
+    font-size: 1rem;
+  }
+  .view-3 .gallery {
+    display: flex;
+    gap: 2rem;
+  }
+  .view-3 .gallery .left {
+    width: 60%;
+  }
+  .view-3 .gallery .left .card img {
+    width: 100%;
+    height: inherit;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .view-3 .gallery .right {
+    width: 40%;
+    margin-top: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  .view-3 .gallery .right .card {
+    display: flex;
+    gap: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

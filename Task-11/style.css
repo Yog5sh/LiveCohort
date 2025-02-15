@@ -166,6 +166,52 @@ section {
 
 .view-4 {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-4 .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.view-4 .left img {
+  width: 4rem;
+}
+.view-4 .left .text h1 {
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+.view-4 .left .text p {
+  text-transform: uppercase;
+}
+.view-4 .line {
+  height: initial;
+  width: 0.1rem;
+  background-color: black;
+  display: none;
+}
+.view-4 .right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-4 .right p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.view-4 .right a {
+  padding: 0.6rem 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.8rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1024px) {
@@ -231,5 +277,38 @@ section {
   }
   .view-3 .second .card h1 {
     font-weight: 500;
+  }
+  .view-4 {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .view-4 .left {
+    width: 60%;
+    gap: 2rem;
+  }
+  .view-4 .left img {
+    width: 4rem;
+    order: 2;
+  }
+  .view-4 .left .text {
+    order: 1;
+  }
+  .view-4 .left .text h1 {
+    font-size: 5rem;
+  }
+  .view-4 .line {
+    display: block;
+  }
+  .view-4 .right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .view-4 .right p {
+    font-size: 1.5rem;
+  }
+  .view-4 .right a {
+    margin-top: 22rem;
   }
 }/*# sourceMappingURL=style.css.map */

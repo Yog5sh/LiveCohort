@@ -142,7 +142,6 @@ section {
     position: sticky;
     top: 0;
 
-
     h1 {
       font-weight: 500;
       font-size: 2rem;
@@ -178,9 +177,62 @@ section {
   }
 }
 
-.view-4{
+.view-4 {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+
+    img {
+      width: 4rem;
+    }
+    .text {
+      h1 {
+        margin-top: 1rem;
+        font-size: 3rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1.1;
+      }
+
+      p {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .line {
+    height: initial;
+    width: .1rem;
+    background-color: black;
+    display: none;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    p{
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+    a {
+      padding: 0.6rem 1rem;
+      background-color: black;
+      color: white;
+      border-radius: 0.8rem;
+      width: fit-content;
+      text-transform: uppercase;
+    }
+  }
 }
+
 @media (min-width: 1024px) {
   section {
     padding: 3rem 3rem;
@@ -270,6 +322,50 @@ section {
     }
   }
 
+
+  .view-4 {
+ 
+    flex-direction: row;
+    gap: 2rem;
   
+    .left {
+
+   width: 60%;
+      gap: 2rem;
+    
+  
+      img {
+        width: 4rem;
+        order: 2;
+      }
+      .text {
+        order: 1;
+       h1{
+        font-size: 5rem;
+       }
+       
+
+      }
+    }
+  
+    .line {
+      display: block;
+    }
+   
+
+    .right {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      p{
+        font-size: 1.5rem;
+      
+      }
+      a {
+        margin-top: 22rem;
+      }
+    }
+  }
 
 }

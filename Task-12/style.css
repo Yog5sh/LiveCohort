@@ -1,0 +1,190 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  width: 100%;
+  padding: 1rem;
+}
+
+nav {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+nav .menu {
+  display: none;
+}
+nav .search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.4rem;
+}
+nav .search .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+nav .search .form .search-input {
+  width: 100%;
+  border-radius: 0.4rem;
+  padding: 4px;
+}
+nav .search .signin {
+  flex-shrink: 0;
+  padding: 4px 8px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+
+.view-1 {
+  padding-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.view-1 .first {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-1 .first h1 {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+.view-1 .first p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.view-1 .second {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "a a b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" "a a c c";
+  gap: 1rem;
+}
+.view-1 .second .img-a {
+  grid-area: a;
+  height: 100%;
+}
+.view-1 .second .img-b {
+  grid-area: b;
+}
+.view-1 .second .img-c {
+  grid-area: c;
+}
+.view-1 .second img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+.view-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-2 h1 {
+  font-size: 2rem;
+}
+.view-2 .titles p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  main {
+    padding: 2rem 4rem;
+  }
+  nav .menu {
+    display: flex;
+    gap: 2rem;
+  }
+  nav .menu li a {
+    position: relative;
+    padding-bottom: 0.2rem;
+  }
+  nav .menu li a::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.1rem;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+  }
+  nav .search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+  }
+  nav .search .form {
+    width: 100%;
+    position: relative;
+    align-items: center;
+  }
+  nav .search .form .search-input {
+    width: 100%;
+    border-radius: 0.4rem;
+    padding: 4px;
+  }
+  nav .search .form::before {
+    content: "⌕";
+    rotate: -90deg;
+    font-size: 2rem;
+    position: absolute;
+    top: -25%;
+    left: -20%;
+  }
+  nav .search .signin {
+    color: white;
+  }
+  nav .search .hamburger {
+    display: none;
+  }
+  .view-1 {
+    flex-direction: row;
+    gap: 1.6rem;
+  }
+  .view-1 .first {
+    width: 60%;
+    padding-top: 5rem;
+  }
+  .view-1 .first h1 {
+    font-size: 5rem;
+    font-weight: 600;
+  }
+  .view-1 .first p {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  .view-1 .second {
+    width: 60%;
+    grid-template-areas: ". . b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" ". . c c";
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -228,3 +228,95 @@
 //* Question 15
 // Number Reversal – Take a three-digit number from the user
 // and print its reverse. (Example: 123 → 321).
+
+//? let input = prompt("Enter a three-digit number: ");
+//? let arr = input.split("");
+//? let reverseArr = arr.reverse().join("");
+//? let reversedNumber = Number(reverseArr);
+//? console.log(`User input is: ${input} and reverse is: ${reversedNumber}`);
+
+//* Question 16
+// Sum of Digits - Take a number from the user and print the sum
+// of its digits. (Example: 123 —Y 1+2+3 = 6).
+
+//? let input = prompt("Enter a three-digit number: ");
+//? let arr = input.split("");
+//? let sum = 0;
+//? for (let i = 0; i < arr.length; i++) {
+//?   sum += Number(arr[i]);
+//? }
+//? console.log("Sum of digits:", sum);
+
+//* Question 17
+// Palindrome Checker — Ask the user for a word. Check if it
+// reads the same forward and backward. Print "Palindrome" or
+// "Not a Palindrome."
+
+//? let input = prompt("Enter a number: ");
+//? let arr = input.split("");
+//? let reverseArr = arr.reverse().join("");
+//? let reversedNumber = Number(reverseArr);
+//? if(input == reversedNumber){
+//?     console.log("Palindrome occur");
+//? }else{
+//?     console.log("Panlindrome not occur");
+//? }
+
+//* Question 18
+//* Question 19
+//* Question 20
+
+//* Question 21
+// Even Digit Counter — Take a number from the user and count
+// how many even digits it has.
+
+//? let input = prompt("Enter a number: ");
+//? let arr = input.split("");
+//? console.log(arr);
+//? let result;
+//? for (let i = 0; i <= arr.length; i++) {
+//?   result = i;
+//? }
+//? console.log(result);
+
+//* Question 22
+// Nested Condition Challenge - Ask the user for their age and
+// salary. Print a message based on conditions:
+// If age is below 18, print "Not eligible"
+// If age is 18 or more but salary is less than *20,000, print "Low
+// Salary"
+// If salary is or more, print "High Salary"
+// Otherwise, print "Medium Salary"
+
+//? let age = +prompt("Enter your age : ");
+//? let salary = +prompt("Enter your salary : ");
+//? if (age < 18) {
+//?   console.log("Not eligible");
+//? } else if (age >= 18) {
+//?   if (salary < 20000) {
+//?     console.log("low Salary");
+//?   } else {
+//?     console.log("High Salary");
+//?   }
+//? } else {
+//?   console.log("Medium Salary");
+//? }
+
+//* Question 23
+// Toggle Case — Ask the user for a word and toggle the case of
+// every character. Example: HeLLo hEllO.
+
+//? let input = prompt("Enter a word mixture of upper and lower case : ");
+//? let arr = input.split("");
+//? for (let i = 0; i < arr.length; i++) {
+//?   if (arr[i] == arr[i].toUpperCase()) {
+//?     arr[i] = arr[i].toLowerCase();
+//?   } else {
+//?     arr[i] = arr[i].toUpperCase();
+//?   }
+//? }
+//? console.log(arr.join(""));
+
+
+//* Question 24
+//* Question 25

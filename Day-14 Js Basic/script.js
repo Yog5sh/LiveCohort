@@ -263,8 +263,36 @@
 //? }
 
 //* Question 18
+// Reverse without string methods - ask user from number and reverse it without using split , reverse, join
+
+//? let input = prompt("Enter three number: ");
+//? let result ="";
+//? for (let i = input.length - 1; i >= 0; i--) {
+//?    result = result + input[i];
+//? }
+//? console.log(result);
+
 //* Question 19
+// find second largest numbers from three numbers as input
+
+//? let a = +prompt("Enter 1st number: ");
+//? let b = +prompt("Enter 2nd number: ");
+//? let c = +prompt("Enter 3rd number: ");
+//? if ((a < b && a > c) || (a < c && a > b)) {
+//?   console.log(`Second largest : ${a}`);
+//? } else if ((b < a && b > c) || (b < c && b > a)) {
+//?   console.log(`Second largest : ${b}`);
+//? } else if ((c < b && c > a) || (c < a && c > b)) {
+//?   console.log(`Second largest : ${c}`);
+//? } else {
+//?   console.log(`There is no Second largest`);
+//? }
+
 //* Question 20
+
+
+
+
 
 //* Question 21
 // Even Digit Counter — Take a number from the user and count

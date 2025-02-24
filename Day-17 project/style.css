@@ -117,6 +117,83 @@ section {
   display: flex;
   flex-direction: column;
 }
+.view-3 .middle {
+  display: flex;
+  padding-top: 2rem;
+  gap: 1rem;
+  flex-direction: row-reverse;
+}
+.view-3 .middle .first h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.view-3 .middle .first p {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+}
+.view-3 .middle .second {
+  writing-mode: vertical-lr;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.view-4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.view-4 .left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-4 .left h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.view-4 .left .grid {
+  display: grid;
+  grid-template-columns: auto;
+}
+.view-4 .left .grid .card {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.4);
+  padding-bottom: 2rem;
+}
+.view-4 .left .grid .card h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.view-4 .left .grid .card p {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  letter-spacing: 1px;
+  color: gray;
+}
+.view-4 .left .grid .card .about {
+  margin-top: 1.2rem;
+}
+.view-4 .left .grid .card .about a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.view-4 .left .grid .card .about a svg {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  color: white;
+  padding: 0.4rem;
+  rotate: 45deg;
+}
 
 @media (min-width: 1024px) {
   main {
@@ -162,11 +239,13 @@ section {
     padding: 2rem 2rem 0 0;
   }
   .view-2 .detail h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 300;
     text-transform: uppercase;
+    line-height: 1;
   }
   .view-2 .detail p {
+    width: 100%;
     margin-top: 1rem;
     font-size: 2rem;
     letter-spacing: 1px;
@@ -182,7 +261,60 @@ section {
     justify-content: space-between;
   }
   .view-2 .detail .list .item p {
+    width: -moz-fit-content;
+    width: fit-content;
     font-size: 2rem;
     text-transform: uppercase;
+  }
+  .view-3 {
+    flex-direction: row;
+  }
+  .view-3 img {
+    width: 30%;
+  }
+  .view-3 .middle {
+    display: flex;
+    padding-top: 2rem;
+    flex-direction: row;
+    padding-left: 2rem;
+  }
+  .view-3 .middle .first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .view-3 .middle .first h2 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 1;
+  }
+  .view-3 .middle .first p {
+    width: 75%;
+    color: gray;
+    font-size: 1.3rem;
+  }
+  .view-3 .middle .second {
+    writing-mode: vertical-lr;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  .view-4 {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .view-4 .left {
+    gap: 2rem;
+  }
+  .view-4 .left h2 {
+    width: 60%;
+    font-size: 4rem;
+  }
+  .view-4 .left .grid {
+    grid-template-columns: auto auto;
+    gap: 1rem;
+  }
+  .view-4 .img3 {
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -144,6 +144,8 @@ section {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid gray;
 }
 .view-4 .left {
   display: flex;
@@ -193,6 +195,181 @@ section {
   color: white;
   padding: 0.4rem;
   rotate: 45deg;
+}
+
+.view-5 {
+  width: 100%;
+}
+.view-5 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.view-5 .gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+.view-5 .gallery .list-first img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.view-5 .gallery .list-second {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.view-5 .gallery .list-second img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.view-5 .gallery img {
+  margin-top: 1rem;
+}
+.view-5 .gallery .two,
+.view-5 .gallery .four {
+  display: none;
+}
+.view-5 .gallery .card .heading {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.view-5 .gallery .card p {
+  margin-top: 0.4rem;
+}
+.view-5 .gallery .card .div {
+  margin-top: 1.2rem;
+}
+.view-5 .gallery .card .div a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.view-5 .gallery .card .div a svg {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  color: white;
+  padding: 0.4rem;
+  rotate: 45deg;
+}
+
+.view-6 {
+  width: 100%;
+  display: flex;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid gray;
+}
+.view-6 .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.view-6 .container .head {
+  text-align: end;
+  font-size: 4rem;
+  font-weight: 300;
+}
+.view-6 .container .list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  width: 100%;
+}
+.view-6 .container .list .list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+.view-6 .container .list .list-item .left {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-direction: column;
+}
+.view-6 .container .list .list-item .left p {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.view-6 .container .list .list-item .right {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+
+.view-7 {
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.view-7 .first {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.view-7 .first h2 {
+  font-size: 2.2rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.view-7 .first p {
+  width: 90%;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+.view-7 .second {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.view-7 .second .card {
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+}
+.view-7 .second .card .title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.view-7 .second .card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.view-7 .second .card .posIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.view-7 .second .card .posIcon p {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+.view-7 .second .card .posIcon .icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.view-7 .second .card .posIcon .icons svg {
+  width: 1rem;
+}
+.view-7 .second .card .description {
+  width: 100%;
+  font-size: 1.2rem;
+  letter-spacing: 1.4px;
+  color: gray;
 }
 
 @media (min-width: 1024px) {
@@ -302,6 +479,7 @@ section {
   .view-4 {
     flex-direction: row;
     gap: 2rem;
+    padding-bottom: 4rem;
   }
   .view-4 .left {
     gap: 2rem;
@@ -316,5 +494,112 @@ section {
   }
   .view-4 .img3 {
     width: 50%;
+  }
+  .view-5 {
+    width: 100%;
+  }
+  .view-5 .gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .view-5 .gallery .list-first,
+  .view-5 .gallery .list-second {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto auto;
+  }
+  .view-5 .gallery .list-first img,
+  .view-5 .gallery .list-second img {
+    width: 100%;
+  }
+  .view-5 .gallery .list-first .two,
+  .view-5 .gallery .list-first .four,
+  .view-5 .gallery .list-second .two,
+  .view-5 .gallery .list-second .four {
+    display: block;
+  }
+  .view-5 .gallery .list-first .card,
+  .view-5 .gallery .list-second .card {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  .view-5 .gallery .list-first .card div h4,
+  .view-5 .gallery .list-second .card div h4 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  .view-6 {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .view-6 .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60%;
+  }
+  .view-6 .container .head {
+    text-align: end;
+    font-size: 4rem;
+    font-weight: 300;
+  }
+  .view-6 .container .list {
+    width: 100%;
+    gap: 2rem;
+  }
+  .view-6 .container .list .list-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+  }
+  .view-6 .container .list .list-item .left {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+  }
+  .view-6 .container .list .list-item .left p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  .view-6 .container .list .list-item .right {
+    font-size: 0.6rem;
+  }
+  .view-7 {
+    gap: 4rem;
+  }
+  .view-7 .first {
+    width: 100%;
+    flex-direction: row;
+    flex: 1;
+    align-items: end;
+  }
+  .view-7 .first h2 {
+    width: 100%;
+    font-size: 6rem;
+  }
+  .view-7 .first p {
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+  }
+  .view-7 .second {
+    flex-direction: row;
+    flex: 1;
+  }
+  .view-7 .second .card img {
+    height: 400px;
+  }
+  .view-7 .second .card .description {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
